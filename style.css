@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.theme-light {
+  background: #f5f5f5;
+  color: #333;
+}
+.theme-dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+.theme-pastel {
+  background: #fff0f5;
+  color: #4a4a4a;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background 0.3s;
+}
+.theme-dark .container {
+  background: #1e1e1e;
+}
+
+.clock {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.calendar {
+  width: 300px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar-header h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.calendar-days,
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 10px;
+  gap: 4px;
+}
+
+.calendar-days div,
+.calendar-dates div {
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar-dates div {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.calendar-dates .today {
+  background: #007bff;
+  color: white;
+}
+
+.calendar-dates .holiday {
+  background: #ff4d4d;
+  color: white;
+}
+
+.calendar-dates .event {
+  border: 2px solid #ffc107;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.controls button,
+.controls select {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
